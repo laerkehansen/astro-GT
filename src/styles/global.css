@@ -1,0 +1,33 @@
+:root {
+  --primary-color-blue: rgba(39, 58, 170, 1);
+  --primary-color-red: rgba(252, 77, 92, 1);
+  --secondary-color-lightblue: rgba(209, 236, 239, 1);
+  --secondary-color-lightpink: rgba(255, 199, 218, 1);
+  --secondary-color-beige: rgba(255, 245, 235, 1);
+  --secondary-color-black: rgba(20, 20, 20, 1);
+}
+
+:root {
+  --h1-size: 4rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --p-size: 1.25rem;
+  --footer-size: 0.25rem;
+  --headerAndLink-size: 1rem;
+  --paragraf-spacing: 1.875rem;
+  --text-width: 75ch;
+}
+
+@font-face {
+  font-family: Archivo;
+  src: url(//fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap);
+}
+
+@font-face {
+  font-family: Obviously;
+  src: url();
+}
+
+body {
+  background-color: var(--secondary-color-beige);
+}

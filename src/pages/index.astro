@@ -1,16 +1,21 @@
 ---
-
+import Afsnit from "../components/Afsnit.astro";
+import "../styles/global.css"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Afsnit
+      header="CHAT MED OS"
+      text="Velkommen til GirlTalk's chat! Vi er her for at give dig et trygt og støttende rum, hvor du kan åbne op og tale om alt, hvad der fylder i dit hoved. Uanset om du står over for små bump på vejen eller store udfordringer i livet, er vores chat her for at hjælpe dig med at finde vej."
+      text2="At være ung kan være en forvirrende og udfordrende tid. Der er så meget at navigere igennem - skole, venskaber, familie, kærlighed og alt det midt imellem. Det er her, GirlTalk's chat kommer ind i billedet. Vi er her for at give dig en stemme og en platform til at dele dine tanker, følelser og oplevelser."
+    />
+  </body>
 </html>
