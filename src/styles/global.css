@@ -28,6 +28,13 @@
   src: url();
 }
 
+* {
+  margin: 0;
+}
+
 body {
   background-color: var(--secondary-color-beige);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 8px;
 }

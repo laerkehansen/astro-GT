@@ -1,7 +1,7 @@
 ---
 const header = Astro.props.header;
 const text = Astro.props.text;
-const text2 = Astro.props.text;
+const text2 = Astro.props.text2;
 ---
 
 <div class="forste_afsnit">
@@ -15,15 +15,19 @@ const text2 = Astro.props.text;
     color: var(--primary-color-blue);
     font-size: var(--h2-size);
     max-width: var(--text-width);
+    grid-column: 4/10;
   }
   p {
     font-family: Archivo;
     line-height: var(--paragraf-spacing);
     max-width: var(--text-width);
     margin: auto;
+    grid-column: 4/10;
   }
 
   .forste_afsnit {
     background-color: var(--secondary-color-beige);
+    display: grid;
+    grid-area: 1/4/1/10;
   }
 </style>
