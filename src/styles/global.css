@@ -40,7 +40,7 @@ body {
   background-color: var(--secondary-color-beige);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, auto);
+  grid-template-rows: repeat(20, auto);
   gap: 8px;
 }
 
