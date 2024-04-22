@@ -2,6 +2,8 @@
 const header = Astro.props.header;
 const text = Astro.props.text;
 const text2 = Astro.props.text2;
+const text3 = Astro.props.text3;
+const text4 = Astro.props.text4;
 ---
 
 <div class="forste_afsnit">
@@ -9,8 +11,33 @@ const text2 = Astro.props.text2;
   <p>{text}</p>
   <p>{text2}</p>
 </div>
+<div>
+  <img src="/public/stjerne.png" alt="stjerne" class="stjerne" />
+</div>
+<img src="/public/stjerne.png" alt="stjerne" class="stjerne1" />
+<img src="/public/stjerne.png" alt="stjerne" class="stjerne2" />
+<img src="/public/stjerne.png" alt="stjerne" class="stjerne3" />
+
+<div class="link">
+  <hr />
+  <p>Læs Mere <a href="*">Åbningstider for vores chat</a></p>
+  <hr />
+</div>
+
+<div class="andet_afsnit">
+  <p>{text3}</p>
+  <p>{text4}</p>
+</div>
 
 <style>
+    @keyframes stjerne {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+}
   h2 {
     color: var(--primary-color-blue);
     font-size: var(--h2-size);
@@ -22,7 +49,7 @@ const text2 = Astro.props.text2;
     font-family: Archivo;
     line-height: var(--paragraf-spacing);
     max-width: var(--text-width);
-    margin: auto;
+    margin: 2%;
     grid-column: 4/10;
   }
 
@@ -30,5 +57,50 @@ const text2 = Astro.props.text2;
     background-color: var(--secondary-color-beige);
     display: grid;
     grid-area: 1/4/1/10;
+  }
+
+  .andet_afsnit {
+    background-color: var(--secondary-color-beige);
+    display: grid;
+    grid-area: 5/4/5/10;
+    margin-bottom: 30%;
+  }
+
+  .link {
+    grid-area: 4/4/4/10;
+    margin: 10%;
+  }
+
+  .stjerne {
+    grid-area: 1/4/1/10;
+    translate: 300px 100px;
+    animation-name: stjerne;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .stjerne1 {
+    grid-area: 1/4/1/10;
+    translate: -140px 200px;
+    animation-name: stjerne;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .stjerne2 {
+    grid-area: 1/4/1/10;
+    translate: 780px 380px;
+    animation-name: stjerne;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .stjerne3 {
+    grid-area: 1/4/1/10;
+    translate: 750px 250px;
+    animation-name: stjerne;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 </style>

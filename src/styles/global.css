@@ -28,8 +28,8 @@
   src: url(https://use.typekit.net/efq0qna.css);
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
 * {
@@ -42,4 +42,34 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, auto);
   gap: 8px;
+}
+
+h2 {
+  color: var(--primary-color-blue);
+  font-size: var(--h2-size);
+  max-width: var(--text-width);
+  font-family: obviously;
+  text-align: center;
+  margin: 5%;
+  z-index: 100;
+}
+
+p {
+  font-family: Archivo;
+  line-height: var(--paragraf-spacing);
+  max-width: var(--text-width);
+  margin: auto;
+}
+
+a:link{
+    color: var(--primary-color-red);
+}
+a:hover{
+    color: var(--primary-color-blue);
+}
+a:active{
+    color: var(--primary-color-blue);
+}
+a:visited{
+    color: var(--secondary-color-lightpink);
 }
