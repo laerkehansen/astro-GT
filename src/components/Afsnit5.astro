@@ -1,0 +1,57 @@
+---
+
+---
+
+<img class="sol" src="Sol.png" alt="sol" />
+<img class="sky" src="moerkeblaa_sky.png" alt="sky uden fyld" />
+<img class="sky2" src="moerkeblaa_sky.png" alt="sky uden fyld" />
+
+<div class="afsnit5">
+  <h2>DET ER OKAY AT FØLE SIG ALENE</h2>
+  <p>
+    I løbet af sommeren har en stor del af unge mellem 12 og 20 år følt sig
+    ensomme, viser en ny undersøgelse. Hele 82% af unge i denne aldersgruppe har
+    sagt, at de har følt sig ensomme i ferieperioden.
+    <br /><br />
+    Det er vigtigt at huske på, at det er okay at føle sig sådan, men det er også
+    vigtigt at søge støtte og finde måder at føle sig mere forbundet med andre.
+    <br /><br />
+    Lad os sammen arbejde på at støtte hinanden og skabe mere glæde og samhørighed,
+    uanset hvilken tid på året det er.
+  </p>
+</div>
+
+<style>
+  @keyframes sol {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .sol {
+    padding-top: 10%;
+    grid-area: 20/2/20/4;
+    animation-name: sol;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+  }
+
+  .sky {
+    grid-area: 20/10/20/12;
+    translate: 0px 100px;
+  }
+  .sky2 {
+    grid-area: 20/10/20/12;
+    translate: -100px 50px;
+  }
+
+  .afsnit5 {
+    padding-top: 15%;
+    padding-bottom: 20%;
+    grid-area: 20/4/20/10;
+  }
+</style>
