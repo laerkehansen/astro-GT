@@ -6,6 +6,7 @@
 <img class="sky" src="moerkeblaa_sky.png" alt="sky uden fyld" />
 <img class="sky2" src="moerkeblaa_sky.png" alt="sky uden fyld" />
 
+<img class="illustration" src="illu3.png" alt="ked af det pige" />
 <div class="afsnit5">
   <h2>DET ER OKAY AT FØLE SIG ALENE</h2>
   <p>
@@ -20,6 +21,7 @@
     uanset hvilken tid på året det er.
   </p>
 </div>
+
 
 <style>
   @keyframes sol {
@@ -37,7 +39,7 @@
     animation-name: sol;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
+    animation-direction: alternate-reverse;
   }
 
   .sky {
@@ -51,7 +53,13 @@
 
   .afsnit5 {
     padding-top: 15%;
-    padding-bottom: 20%;
     grid-area: 20/4/20/10;
+  }
+
+  .illustration {
+    margin: auto;
+    grid-column: 4/10;
+    grid-row: 21/21;
+    padding-bottom: 20%;
   }
 </style>
