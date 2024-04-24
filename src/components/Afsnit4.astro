@@ -1,13 +1,97 @@
 ---
+
 ---
+
+<img src="stjerne.png" alt="stjerne" class="stjerne1" />
+<img src="stjerne.png" alt="stjerne" class="stjerne2" />
+<img src="stjerne.png" alt="stjerne" class="stjerne3" />
+<img src="stjerne.png" alt="stjerne" class="stjerne4" />
+
+<img src="roed_hjerte.png" alt="rødt hjerte" class="hjerte_roed" />
+<img src="roed_hjerte.png" alt="rødt hjerte" class="hjerte_roed2" />
+<img src="roed_hjerte.png" alt="rødt hjerte" class="hjerte_roed3" />
+
 <div class="fjerde_afsnit">
-<p>hej</p>
-<img src="/public/telefon.png" alt="telefon">
+  <video class="sofia" src="sofia_1-kopi.mp4"></video>
+  <img class="iphone" src="iphone1.png" alt="telefon" />
 </div>
 
 <style>
-    .fjerde_afsnit{
-        background-color: var(--secondary-color-lightpink);
-        grid-area: 15/1/20/14;
-    }
+  .fjerde_afsnit {
+    background-color: var(--secondary-color-lightpink);
+    grid-area: 15/1/20/14;
+    display: grid;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .iphone {
+    width: 450px;
+    height: 811px;
+    margin: auto;
+    grid-area: 15/1/15/7;
+  }
+
+  img {
+    grid-area: 15/4/15/7;
+  }
+  .sofia {
+    max-width: 43%;
+    rotate: -90deg;
+    margin: auto;
+    grid-area: 15/1/15/7;
+  }
+
+  .stjerne1 {
+    grid-area: 14/4/14/10;
+    translate: 580px 650px;
+    animation-name: stjerne;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .stjerne2 {
+    grid-area: 14/4/14/10;
+    translate: 650px 850px;
+    animation-name: stjerne;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .stjerne3 {
+    grid-area: 14/4/14/10;
+    translate: 100px 1450px;
+    animation-name: stjerne;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .stjerne4 {
+    grid-area: 14/4/14/10;
+    translate: 50px 1250px;
+    animation-name: stjerne;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .hjerte_roed {
+    grid-area: 14/4/14/10;
+    translate: 600px 700px;
+    max-width: 10%;
+    rotate: 30deg;
+  }
+  .hjerte_roed2 {
+    grid-area: 14/4/14/10;
+    translate: 600px 800px;
+    max-width: 5%;
+    rotate: 30deg;
+
+  }
+  .hjerte_roed3 {
+    grid-area: 14/4/14/10;
+    translate: 600px 600px;
+    max-width: 10%;
+    rotate: -25deg;
+  }
 </style>
